@@ -53,8 +53,15 @@
     padding: 30px;
 }
 .mb-50{
-    margin-bottom: 50px;
+    line-height: 2rem;
+  
+
+    
+   
 }
+body {
+    background-color: hsl(0, 6%, 84%);
+   }
 
 
 /*
@@ -76,6 +83,12 @@ Estilo da página contato.css*/
     color: cadetblue;
 }
 .ml-50{
+    line-height: 4rem;
     margin-left: 50px;
+
     
 }
+
+body {
+    background-color: hsl(0, 6%, 84%);
+   }

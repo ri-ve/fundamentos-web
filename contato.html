@@ -11,12 +11,12 @@
 <body>
     <ul id="menu2">
         <li>
-            <a href="index.html">Home</a>
+            <a href="index.html"> Home </a>
         </li>
         <li>
-            <a href="contato.html">Contato</a>
+            <a href="contato.html"> Contato </a>
         </li>
-    </ul>
+    
     </ul>
     <h1 class="center">Entre em contato comigo</h1>
     
@@ -25,19 +25,23 @@
        
         <form>
             <label for="nome">Nome:</label> <br>
-            <input type="text "id="nome">
+            <input type="text" id = "nome" onkeyup="validaNome()"required> 
+            <div id='txtNome'></div>
             <br>
-            <br>
+            
             <label for="email">E-mail:</label> <br>
-            <input type="email" id="email">
+            <input type="email" id="email" onkeyup="validaEmail()" required> 
+            <div id='txtEmail'></div>
+
             <br>
             <br>
             <label for="assunto">Assunto:</label> <br>
-            <textarea name="text" id="assunto" cols="30" rows="10"></textarea>
+            <textarea name="text" id="assunto" cols="30" rows="10" onkeyup="validaAssunto()"required></textarea>
+            <div id='txtAssunto'></div>
             <br>
             <br>
-    
-            <button>Enviar</button>
+              <button onclick="enviar()" >Enviar</button>
+        </form>
     </div>
             <div class="ml-50">
                 
@@ -48,13 +52,14 @@
                 height="250" 
                 style="border:0;
                 " allowfullscreen="
-                " loading="lazy"></iframe>
-                <footer>
+                " loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
+                
             </div>
             
         
-        </form>
+        
     </div>
+    <hr>
     <footer>
         <div class="container mb-50">
             <a href="https://www.linkedin.com/in/rivelino-desenvolvedor-java/" target="_blank">
@@ -71,8 +76,14 @@
         </a>
         
         </div>
-                <p class="center">Todos os direitos reservados: Rivelino Santos &copy </p>
+                <p class="center">
+                    Todos os direitos reservados: Rivelino Santos &copy 
+                </p>
+
             </footer>
-    
+            
+            <script src="assets/js/script.js"></script>
 </body>
+
+
 </html>
